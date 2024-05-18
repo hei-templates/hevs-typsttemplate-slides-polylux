@@ -5,6 +5,7 @@
   subtitle: [Subtitle],
   authors: [Author A, Author B],
   date: datetime.today().display("[day].[month].[year]"),
+  duration: 10, // time in minutes for presentation or counter timer if no field is given
   doc,
 )
 
@@ -12,6 +13,8 @@
   title: [First slide title]
 )[
   #lorem(20)
+
+  #pdfpc.speaker-note("This is a note that only the speaker will see.")
 ]
 
 #focus-slide(
@@ -33,4 +36,11 @@
 
   #pause
   ...you can see the current section at the top of the slide?
+
+  #pdfpc.speaker-note(
+    ```md
+    # My notes
+    Did you know that pdfpc supports Markdown notes? _So cool!_
+    ```
+  )
 ]

@@ -6,6 +6,7 @@
   subtitle: none,
   authors: [],
   date: none,
+  duration: none,
   doc,
 ) = {
   
@@ -18,6 +19,21 @@
     logo: image("./FR-DE_HEI_rvb.png"),
     color: rgb("#ea366a"),
   )
+
+  if duration != none{
+    pdfpc.config(
+      duration-minutes: duration,
+      default-transition: (
+        type: "fade",
+      )
+    )
+  } else {
+    pdfpc.config(
+      default-transition: (
+        type: "fade",
+      )
+    )
+  }
 
   title-slide(
     title: [#title],
