@@ -8,7 +8,7 @@ Before getting started, make sure you have the following tools installed:
 ``` bash
 cargo install https://github.com/typst/typst typst-cli
 ```
-- polyylux2pdfpc: to convert the compiled files into P presentation PDFs
+- polylux2pdfpc: to convert the compiled files into P presentation PDFs
 ``` bash
 cargo install --git https://github.com/andreasKroepelin/polylux/ --branch release
 ```
