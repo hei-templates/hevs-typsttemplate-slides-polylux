@@ -7,6 +7,7 @@
   authors: [],
   date: none,
   duration: none,
+  handout: false,
   doc,
 ) = {
   
@@ -19,6 +20,10 @@
     logo: image("./FR-DE_HEI_rvb.png"),
     color: rgb("#ea366a"),
   )
+
+  if handout {
+    enable-handout-mode(true)
+  }
 
   if duration != none{
     pdfpc.config(
