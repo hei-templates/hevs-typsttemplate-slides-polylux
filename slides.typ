@@ -4,7 +4,7 @@
   title: [Title],
   subtitle: [Subtitle],
   authors: [Author A, Author B],
-  date: datetime.today().display("[day].[month].[year]"),
+  date: datetime.today(),
   duration: 10, // time in minutes for presentation or counter timer if no field is given
   doc,
 )

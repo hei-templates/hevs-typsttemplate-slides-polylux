@@ -5,13 +5,24 @@
   title: [Title],
   subtitle: none,
   authors: [],
-  date: none,
+  date: datetime.today(),
   duration: none,
   handout: false,
   doc,
 ) = {
   
-  set text(font: "Inria Sans")
+  //set text(font: "Inria Sans")
+
+  let date-text = if date.day() == 1 {
+    date.display("[weekday], [day padding:none]st of [month repr:long] [year]")
+  } else if date.day() == 2 {
+    date.display("[weekday], [day padding:none]nd of [month repr:long] [year]")
+  } else if date.day() == 3 {
+    date.display("[weekday], [day padding:none]rd of [month repr:long] [year]")
+  } else {
+    date.display("[weekday], [day padding:none]th of [month repr:long] [year]")
+  }
+
 
   show: clean-theme.with(
     //aspect-ratio: "4-3",
@@ -44,7 +55,7 @@
     title: [#title],
     subtitle: [#subtitle],
     authors: ([#authors]),
-    date: [#date],
+    date: [#date-text],
   )
 
   doc
