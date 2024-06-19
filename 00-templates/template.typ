@@ -7,6 +7,7 @@
   authors: [],
   date: datetime.today(),
   duration: none,
+  fade: true,
   handout: false,
   doc,
 ) = {
@@ -36,21 +37,27 @@
     enable-handout-mode(true)
   }
 
+  let transition = if fade {
+    "fade"
+  } else {
+    "none"
+  }
+
   if duration != none{
     pdfpc.config(
       duration-minutes: duration,
       default-transition: (
-        type: "fade",
+        type: transition,
       )
     )
   } else {
     pdfpc.config(
       default-transition: (
-        type: "fade",
+        type: transition,
       )
     )
   }
-
+  
   title-slide(
     title: [#title],
     subtitle: [#subtitle],
