@@ -37,9 +37,9 @@ td, th {
 }
 </style>
 
-| <img src="example/01-title.png" width="400"/> | <img src="example/03-picture.png" width="400"/> |
+| <img src="example/01-title.png" width="500"/> | <img src="example/03-picture.png" width="500"/> |
 | ---- | ---- |
-| <img src="example/04-focus.png" width="400"/> | <img src="example/05-section.png" width="400"/> |
+| <img src="example/04-focus.png" width="500"/> | <img src="example/05-section.png" width="500"/> |
 
 ## Contribution
 Contributions are welcome! If you have ideas for improvements or find bugs, feel free to open an issue or submit a pull request on the [repository](https://git.kb28.ch/Klagarge/HEI-Typst-presentation).
