@@ -28,6 +28,19 @@ polylux2pdfpc slides.typ
 pdfpc slides.pdf # add `-s` for swap the presentation/presenter screens
 ```
 
+## Example
+Here some slide example
+
+<style>
+td, th {
+   border: none!important;
+}
+</style>
+
+| <img src="example/01-title.png" width="400"/> | <img src="example/03-picture.png" width="400"/> |
+| ---- | ---- |
+| <img src="example/04-focus.png" width="400"/> | <img src="example/05-section.png" width="400"/> |
+
 ## Contribution
 Contributions are welcome! If you have ideas for improvements or find bugs, feel free to open an issue or submit a pull request on the [repository](https://git.kb28.ch/Klagarge/HEI-Typst-presentation).
 
